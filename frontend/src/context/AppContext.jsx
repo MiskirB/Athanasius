@@ -1,6 +1,6 @@
 import { createContext } from "react";
 import { doctors } from "../assets/assets";
-import Appointments from "../pages/Appointments";
+
 export const AppContext = createContext()
 
 const AppContextProvider = (props)=> {

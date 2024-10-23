@@ -3,7 +3,7 @@ import { AppContext } from "../context/AppContext";
 
 const MyAppointments = () => {
   const { doctors } = useContext(AppContext);
-  console.log('Doctors:', doctors);
+ 
 
   return (
     <div>
@@ -11,7 +11,7 @@ const MyAppointments = () => {
         My Appointments
       </p>
       <div className="">
-        {doctors.slice(0, 2).map((item, index) => (
+        {doctors.slice(0, 3).map((item, index) => (
           <div
             key={index}
             className="grid grid-cols-[1fr_2fr] gap-4 sm:flex sm:gap-6 py-2 border-b"
